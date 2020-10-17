@@ -11,6 +11,6 @@ describe("Example Test 1", () => {
     exampleRouteHandler(mockRequest, mockResponse);
     const actualResponseBody = mockResponse._getData();
     const expectedResponseBody = "Goodbye Earthling!!";
-    assertSame(actualResponseBody, expectedResponseBody);
+    assertSame(actualResponseBody, expectedResponseBody)
   });
 });
