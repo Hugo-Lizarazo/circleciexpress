@@ -10,7 +10,8 @@ describe("Example Test 1", () => {
     const mockResponse = httpMocks.createResponse();
     exampleRouteHandler(mockRequest, mockResponse);
     const actualResponseBody = mockResponse._getData();
-    const expectedResponseBody = "Falla Goodbye Earthling!!";
+    const expectedResponseBody = "Goodbye Earthling!!";
     assert(actualResponseBody, expectedResponseBody);
+    System.out.println(actualResponseBody);
   });
 });
