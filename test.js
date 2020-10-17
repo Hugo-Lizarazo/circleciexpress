@@ -12,6 +12,6 @@ describe("Example Test 1", () => {
     const actualResponseBody = mockResponse._getData();
     const expectedResponseBody = "Goodbye Earthling!!";
     assert(actualResponseBody, expectedResponseBody);
-    System.out.println(actualResponseBody);
+    it(actualResponseBody);
   });
 });
