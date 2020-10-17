@@ -1,4 +1,5 @@
 const assert = require("assert");
+const assertsame = require("assertSame");
 const httpMocks = require("node-mocks-http");
 const exampleRouteHandler = require("./example-router");
 describe("Example Test 1", () => {
@@ -11,6 +12,6 @@ describe("Example Test 1", () => {
     exampleRouteHandler(mockRequest, mockResponse);
     const actualResponseBody = mockResponse._getData();
     const expectedResponseBody = "Goodbye Earthling!!";
-    assertSame(actualResponseBody, expectedResponseBody)
+    assertsame(actualResponseBody, expectedResponseBody)
   });
 });
